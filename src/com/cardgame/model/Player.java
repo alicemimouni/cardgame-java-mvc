@@ -1,5 +1,7 @@
 package com.cardgame.model;
 
+
+
 public class Player {
 	private String name;
 	private Hand hand;
@@ -20,5 +22,9 @@ public class Player {
 	
 	public PlayingCard removeCard() {
 		return hand.removeCard();
+	}
+
+	public String getName() {
+		return name;
 	}
 }
