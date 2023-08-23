@@ -3,7 +3,6 @@ package com.games;
 
 import com.cardgame.controller.GameController;
 import com.cardgame.model.Deck;
-import com.cardgame.view.CommandLineView;
 import com.cardgame.view.GameSwingView;
 
 public class Games {
