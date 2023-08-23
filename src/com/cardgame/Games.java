@@ -1,5 +1,5 @@
 
-
+package com.cardgame;
 
 import com.cardgame.controller.GameController;
 import com.cardgame.model.DeckFactory;
