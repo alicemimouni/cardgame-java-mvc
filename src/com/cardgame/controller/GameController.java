@@ -3,11 +3,11 @@ package com.cardgame.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.cardgame.games.GameEvaluator;
 import com.cardgame.model.Deck;
 import com.cardgame.model.Player;
 import com.cardgame.model.PlayingCard;
 import com.cardgame.view.GameViewable;
-import com.games.GameEvaluator;
 
 
 public class GameController {

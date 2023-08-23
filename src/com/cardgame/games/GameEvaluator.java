@@ -1,4 +1,4 @@
-package com.games;
+package com.cardgame.games;
 
 import java.util.List;
 

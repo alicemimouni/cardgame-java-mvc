@@ -1,12 +1,12 @@
-package com.games;
+package com.cardgame.games;
 
 import java.util.List;
 
 import com.cardgame.model.Player;
 import com.cardgame.model.PlayingCard;
 
-public class HighCardGameEvaluator implements GameEvaluator {
-	
+public class LowCardGameEvaluator implements GameEvaluator {
+
 	@Override
 	public Player evaluateWinner(List<Player> players) {
 		Player bestPlayer = null;
@@ -21,11 +21,11 @@ public class HighCardGameEvaluator implements GameEvaluator {
 			} else {
 				PlayingCard pc = player.getCard(0);
 				int thisRank = pc.getRank().value();
-				if (thisRank >= bestRank) {
-					if (thisRank > bestRank) {
+				if (thisRank <= bestRank) {
+					if (thisRank < bestRank) {
 						newBestPlayer = true;
 					} else {
-						if (pc.getSuit().value() > bestSuit) {
+						if (pc.getSuit().value() < bestSuit) {
 							newBestPlayer = true;
 						}
 					}
