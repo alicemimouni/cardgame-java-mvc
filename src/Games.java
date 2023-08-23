@@ -1,9 +1,11 @@
-package com.games;
+
 
 
 import com.cardgame.controller.GameController;
-import com.cardgame.model.Deck;
+import com.cardgame.model.DeckFactory;
+import com.cardgame.model.DeckFactory.DeckType;
 import com.cardgame.view.GameSwingView;
+import com.games.HighCardGameEvaluator;
 
 public class Games {
 	
@@ -11,7 +13,7 @@ public class Games {
 		GameSwingView gsv = new GameSwingView();
 		gsv.createAndShowGUI();
 		
-		GameController gc = new GameController(new Deck(), gsv, new HighCardGameEvaluator());
+		GameController gc = new GameController(DeckFactory.makeDeck(DeckType.Normal), gsv, new HighCardGameEvaluator());
 		
 		gc.run();
 	}

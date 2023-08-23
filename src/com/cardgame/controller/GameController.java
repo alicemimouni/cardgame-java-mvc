@@ -6,7 +6,6 @@ import java.util.List;
 import com.cardgame.model.Deck;
 import com.cardgame.model.Player;
 import com.cardgame.model.PlayingCard;
-import com.cardgame.view.CommandLineView;
 import com.cardgame.view.GameViewable;
 import com.games.GameEvaluator;
 
@@ -99,9 +98,6 @@ public class GameController {
 		}
 	}
 	
-	void exitGame() {
-		System.exit(0);
-	}
 
 	public void nextAction(String nextChoice) {
 		
@@ -111,6 +107,10 @@ public class GameController {
 		else {
 			startGame();
 		}
+	}
+	
+	void exitGame() {
+		System.exit(0);
 	}
 
 }
